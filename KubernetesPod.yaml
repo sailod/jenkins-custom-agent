@@ -4,7 +4,7 @@ metadata:
 spec:
   containers:
   - name: custom-python
-    image: docker-registry-1630870070.default:5000/custom_python
+    image: docker-registry-1630870070.default:5000/custom_python:v1
     # command:
     # - sleep
     # args:
