@@ -1,7 +1,6 @@
 
 from pathlib import Path
 import os
-print()
 
 files = ["a", "b", "c", "d"]
 

@@ -8,8 +8,7 @@ pipeline {
     stage('Build') {
       steps {
         container('custom-python') {
-          sh 'echo BUSYBOX_CONTAINER_ENV_VAR = ${CONTAINER_ENV_VAR}'
-          sh '/bin/busybox'
+          sh 'python /tmp/zip_job.py'
         }
       }
     }
