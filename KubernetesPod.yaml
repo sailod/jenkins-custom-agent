@@ -5,10 +5,10 @@ spec:
   containers:
   - name: custom-python
     image: docker-registry-1630870070.default:30000/custom_python:v1
-    # command:
-    # - sleep
-    # args:
-    # - 99d
+    command:
+    - sleep
+    args:
+    - 99d
     # env:
     # - name: CONTAINER_ENV_VAR
     #   value: maven
