@@ -1,6 +1,6 @@
 
-# from pathlib import Path
-import os, subprocess
+from pathlib import Path
+import os, subprocess, sys
 
 files = ["a", "b", "c", "d"]
 
@@ -16,6 +16,6 @@ for x in files:
 
 for x in files:
     subprocess.call("zip {}_{}.zip {}.txt".format(x,os.environ['VERSION'],x), shell=True)  # returns the exit code in unix
-    my_file = Path("./{}.zip".format(x))
+    my_file = Path("./{}_{}.zip".format(x,os.environ['VERSION']))
     if not my_file.is_file():
         sys.exit(1)
