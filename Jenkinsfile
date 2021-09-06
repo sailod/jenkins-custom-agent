@@ -8,7 +8,7 @@ pipeline {
     stage('Build') {
       steps {
         container('custom-python') {
-          sh 'python /tmp/zip_job.py'
+          sh 'python3 /tmp/zip_job.py'
         }
       }
     }
